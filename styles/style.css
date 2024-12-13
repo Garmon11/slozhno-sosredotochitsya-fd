@@ -330,6 +330,7 @@
 
   .title-accent-wrap {
     width: 236px;
+    margin-top: 0;
   }
 
   .desctop-wrapper {
@@ -341,10 +342,6 @@
 
   .card-title {
     margin-top: 6px;
-  }
-
-  .title-accent-wrap {
-    margin-top: 0;
   }
 
   .article-tablet-title {
