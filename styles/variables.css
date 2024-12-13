@@ -2,3 +2,21 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --accent-color: #ff0070;
+  --background-url: url(../images/cover-image-dark.png);
+  --angle: var(--accent-color);
+  --text-color: #F1B2CE;
+  --font: 'IBM Plex mono', sans-serif;
+  --buttonActive: #ff0070;
+  --h1: #DB00FF;
+  --background-color: #000028;
+}
+
+/* светлая тема */
+/* .theme_light {
+  --background-url: url(../images/cover-image-light.png);
+  --angle: black;
+  --text-color: #353430;
+} */
