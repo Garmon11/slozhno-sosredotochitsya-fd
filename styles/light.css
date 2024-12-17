@@ -4,33 +4,46 @@
   переключая тему
 */
 
-.theme_light {
+/* .theme_light {
   --background-url: url(../images/cover-image-light.png);
   --text-color: #353430;
   --buttonActive: #353430;
   --accent-color: #FF8DCB;
   --background-color: #FFF1F7;
-}
-
-.page {
-  background-color: var(--background-color);
-}
+} */
 
 .page.theme_light {
-  .title-accent {
-    color: var( --text-color);
+  --background-url: url(../images/cover-image-light.png);
+  --text-color: #353430;
+  --buttonActive: #353430;
+  --accent-color: #FF8DCB;
+  --h1-shadow: #FF0070;
+  --angle-color: #353430;
+  --background-color: #FFF1F7;
+  --h1: #FFC2E6;
+  --button-border: rgb(53,52,48, 0.4);
+  --focus-color: #353430;
+  --rec-display: none;
+  --h2-color: #353430;
+
+  /* .title-accent {
+    color: var(--text-color);
+  }
+
+  .page {
+    background-color: var(--background-color);
   }
 
   .card-title {
     color: var(--text-color);
-  }
+  } */
 
-  .rec {
+  /* .rec {
     display: none;
-  }
+  } */
 
-  .header-text, .card-title {
-    background-color: #FF8DCB;
+  /* .header-text, .card-title {
+    background-color: var(--accent-color);
     color: var( --text-color);
   }
 
@@ -39,14 +52,14 @@
   }
 
   .h1, .footer-text {
-    color: #FFC2E6;
-  }
+    color: var(--h1);
+  } */
 
-  .header__theme-menu-button:hover {
+  /* .header__theme-menu-button:hover {
     border-color: rgb(53,52,48, 0.4);
-  }
+  } */
   
-  .header__theme-menu-button:focus {
+  /* .header__theme-menu-button:focus {
     border-bottom-color: var(--text-color);
     outline: none;
   }
@@ -61,18 +74,26 @@
 
   .header::before, .header::after, .footer::after, .footer::before {
     border-color: var(--text-color);
-  }
+  } */
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --background-url: url(../images/cover-image-light.png);
     --text-color: #353430;
-    --accent-color:  #FFC2E6;
+    --buttonActive: #353430;
+    --accent-color: #FF8DCB;
+    --h2-color: #353430;
     --background-color: #FFF1F7;
+    --h1: #FFC2E6;
+    --button-border: rgb(53,52,48, 0.4);
+    --focus-color: #353430;
+    --rec-display: none;
+    --angle-color: #353430;
+    --h1-shadow: #FF0070;
   }
   
-  .header__theme-menu-button_active {
+  /* .header__theme-menu-button_active {
     border-color: var(--buttonActive);
   }
   
@@ -113,11 +134,11 @@
   }
 
   .h1, .footer-text {
-    color: var(--accent-color);
-    text-shadow: 4px 4px 0 #FF0070;
-  }
+    color: var(--h1);
+    text-shadow: 4px 4px 0 var(--accent-color);
+  } */
 
-  .rec {
+  /* .rec {
     display: none;
-  }
+  } */
 }

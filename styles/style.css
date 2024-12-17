@@ -9,6 +9,8 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
+
+
 .container {
   margin: 0 10px 0 10px;
 }
@@ -22,6 +24,8 @@
   height: 100vh;
   min-height: 668px;
   background-image: var(--background-url);
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-bottom: 40px;
 }
 
@@ -30,6 +34,7 @@
   flex-direction: column;
   align-items: end;
   position: relative;
+  height: 100%;
 }
 
 .header::before {
@@ -37,8 +42,8 @@
   position: absolute;
   width: 22px;
   height: 22px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--angle-color);
+  border-right: 1px solid var(--angle-color);
   right: 0;
   top: 10px;
 }
@@ -48,8 +53,8 @@
   position: absolute;
   width: 22px;
   height: 22px;
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--angle-color);
+  border-bottom: 1px solid var(--angle-color);
   left: 0;
   bottom: 9px;
 }
@@ -57,7 +62,7 @@
 .rec {
   position: absolute;
   text-transform: uppercase;
-  display: inline-block;
+  display: var(--rec-display);
   color: var(--accent-color);
   margin-top: 10px;
   margin-right: 6px;
@@ -110,11 +115,11 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgb(255,0,112, 0.4);
+  border: 1px solid var(--button-border);
 }
 
 .header__theme-menu-button:focus {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--focus-color);
   outline: none;
 }
 
@@ -127,7 +132,7 @@
   display: block;
   width: 95%;
   font-size: 116px;
-  color: #db00ff;
+  color: var(--h1);
   text-shadow: 4px 4px 0 var(--accent-color);
   font-weight: 700;
   line-height: 96px;
@@ -143,7 +148,6 @@
   line-height: 23.4px;
   font-family: var(--font);
   min-width: 345px;
-  min-height: 117px;
   background-color: var(--accent-color);
   color: #000;
   margin-bottom: 65px;
@@ -157,7 +161,7 @@
 }
 
 .title-accent {
-  color: var(--accent-color);
+  color: var(--h2-color);
 }
 
 .title-tablet-card {
@@ -232,8 +236,8 @@
   position: absolute;
   width: 22px;
   height: 22px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--angle-color);
+  border-right: 1px solid var(--angle-color);
   right: 0;
   top: 10px;
 }
@@ -243,8 +247,8 @@
   position: absolute;
   width: 22px;
   height: 22px;
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--angle-color);
+  border-bottom: 1px solid var(--angle-color);
   left: 0;
   bottom: 13px;
 }
@@ -253,8 +257,8 @@
   display: block;
   width: 95%;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  color: #db00ff;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--h1);
+  text-shadow: 4px 4px 0 var(--h1-shadow);
   font-weight: 700;
   line-height: 96px;
   font-family: var(--font);
@@ -262,7 +266,7 @@
 }
 
 .h1, .footer-text {
-  text-shadow: 4px 4px 0 #FF0070;
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .img-section {
@@ -292,6 +296,7 @@
   }
 
   .decorated-zone {
+    min-height: 1024px;
     margin-bottom: 53px;
   }
 
@@ -307,7 +312,6 @@
   .header-text {
     width: 364px;
     margin-top: 166px;
-    margin-bottom: 183px;
   }
 
   .header::before {
@@ -421,6 +425,7 @@
   }
 
   .decorated-zone {
+    height: 0;
     min-height: 768px;
     background-size: cover;
     margin-bottom: 60px;
@@ -462,6 +467,7 @@
     padding-top: 19.6%;
     margin-right: 25%;
     width: 77%;
+    text-shadow: 4px 4px 0 var(--h1-shadow);
   }
 
   .header-text {
@@ -554,5 +560,6 @@
     font-size: 157px;
     margin-top: 4%;
     margin-left: 2.5%;
+    text-shadow: 4px 4px 0 var(--h1-shadow);
   }
 }
