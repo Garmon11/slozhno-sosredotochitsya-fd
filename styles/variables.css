@@ -6,12 +6,19 @@
 :root {
   --accent-color: #ff0070;
   --background-url: url(../images/cover-image-dark.png);
-  --angle: var(--accent-color);
   --text-color: #F1B2CE;
   --font: 'IBM Plex mono', sans-serif;
   --buttonActive: #ff0070;
-  --h1: #DB00FF;
   --background-color: #000028;
+  --h1: #DB00FF;
+  --button-border: rgb(255,0,112, 0.4);
+  --focus-color: #ff0070;
+  --rec-display: inline-block;
+  --angle-color: #FF0070;
+  --h1-shadow: #FF0070;
+  --h2-color: #FF0070;
+  --button-color: #FF0070;
+  --text-h3-color: #000028;
 }
 
 /* светлая тема */
